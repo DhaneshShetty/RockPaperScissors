@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context=".Playzone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="30dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="player1"
+                    android:textColor="#ffffff"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/sc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="56sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="player2"
+                    android:textColor="#ffffff"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/sc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="56sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Choose,click next and pass the phone"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Player1"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="100dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:background="#80d6ff"
+                android:onClick="rock"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/rock" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="#80d6ff"
+                android:cropToPadding="true"
+                android:onClick="paper"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/paper" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="3dp"
+                android:adjustViewBounds="true"
+                android:background="#80d6ff"
+                android:onClick="scissors"
+                android:scaleType="centerInside"
+                android:src="@drawable/scissors" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="next1"
+            android:text="NEXT"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+</ScrollView>
